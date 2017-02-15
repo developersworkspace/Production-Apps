@@ -4,8 +4,6 @@ After=network.target
 
 [Service]
 Type=forking
-PIDFile=/var/run/redis/redis-7001.pid
-
 ExecStart=/usr/local/bin/redis-server /etc/redis/redis-7001.conf
 
 [Install]
