@@ -24,3 +24,6 @@ sudo curl -o /etc/systemd/system/redis-server-7001.service https://raw.githubuse
 
 sudo systemctl start redis-server-7001
 
+sudo systemctl enable redis-server-7001
+
+# bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/install.sh)
