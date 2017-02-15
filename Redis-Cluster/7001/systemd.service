@@ -6,7 +6,7 @@ After=network.target
 Type=forking
 PIDFile=/var/run/redis/redis-7001.pid
 
-ExecStart=/sbin/start-stop-daemon --start --pidfile /var/run/redis/redis.pid --umask 007 --exec /usr/bin/redis-server -- /etc/redis/redis-7001.conf
+ExecStart=/usr/bin/redis-server -- /etc/redis/redis-7001.conf
 ExecReload=/bin/kill -USR2 $MAINPID
 
 [Install]
