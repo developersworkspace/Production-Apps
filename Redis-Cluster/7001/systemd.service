@@ -5,8 +5,6 @@ After=network.target
 [Service]
 Type=forking
 PIDFile=/var/run/redis/redis-7001.pid
-ExecStartPre=/bin/mkdir -p /var/run/redis
-ExecStartPre=/bin/chown redis:redis /var/run/redis
 
 ExecStart=/sbin/start-stop-daemon --start --chuid redis:redis --pidfile /var/run/redis/redis.pid --umask 007 --exec /usr/bin/redis-server -- /etc/redis/redis-7001.conf
 ExecReload=/bin/kill -USR2 $MAINPID
