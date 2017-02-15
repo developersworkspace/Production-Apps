@@ -20,6 +20,7 @@ sudo mkdir /etc/redis
 
 sudo curl -o /etc/redis/redis-7001.conf https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/redis-7001.conf
 
-sudo curl -o /etc/init/redis-server-7001.conf https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/upstart.conf
+sudo curl -o /etc/systemd/system/redis-server-7001.service https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/systemd.service
 
-sudo start redis-server-7001
+sudo systemctl start redis-server-7001
+
