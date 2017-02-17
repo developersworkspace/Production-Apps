@@ -37,3 +37,9 @@ bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-
 bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7006/install.sh)
 bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7007/install.sh)
 bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7008/install.sh)
+
+# Install 'ruby'
+sudo apt-get install -y ruby
+
+# Install 'redis' package for ruby
+gem install redis
