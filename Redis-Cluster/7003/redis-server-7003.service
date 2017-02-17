@@ -1,0 +1,10 @@
+[Unit]
+Description=Redis Datastore Server
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/redis-server /etc/redis/redis-server-7003.conf
+
+[Install]
+WantedBy=multi-user.target

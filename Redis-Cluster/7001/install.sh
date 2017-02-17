@@ -1,29 +1,14 @@
-sudo apt-get update
+# Download Redis configuration file
+sudo curl -o /etc/redis/redis-server-7001.conf https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/redis-server-7001.conf
 
-sudo apt-get install -y build-essential tcl
-
-cd /tmp
-
-curl -O http://download.redis.io/redis-stable.tar.gz
-
-tar xzvf redis-stable.tar.gz
-
-cd redis-stable
-
-make
-
-make test
-
-sudo make install
-
-sudo mkdir /etc/redis
-
-sudo curl -o /etc/redis/redis-7001.conf https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/redis-7001.conf
-
+# Download Redis service configuration file
 sudo curl -o /etc/systemd/system/redis-server-7001.service https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/systemd.service
 
-sudo systemctl start redis-server-7001
-
+# Enable Redis service to run on startup
 sudo systemctl enable redis-server-7001
 
-# bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/install.sh)
+# Start Redis service
+sudo systemctl start redis-server-7001
+
+
+
