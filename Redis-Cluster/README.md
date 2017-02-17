@@ -2,7 +2,7 @@
 
 # Install
 
-Run this command on both Linux servers
+Run this command on your Linux server
 
 `bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/install.sh)`
 
