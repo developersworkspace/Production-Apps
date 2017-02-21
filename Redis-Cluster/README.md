@@ -1,6 +1,6 @@
 # Redis Cluster
 
-## Installing a Redis cluster on a Linux server.
+## Installing a Redis Cluster on a Linux server.
 
 Run this command on your Linux server
 
