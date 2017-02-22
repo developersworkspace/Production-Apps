@@ -7,7 +7,7 @@ replicas = "$1"
 IFS='|' read -a ipAddresses <<< "$2"
 IFS='|' read -a ports <<< "$3"
 
-ipAddressesAndPorts = ()
+declare -a ipAddressesAndPorts = ()
 
 for ipAddress in "${ipAddresses[@]}"
 do
