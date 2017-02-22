@@ -25,4 +25,4 @@ do
 done
 
 # Execute 'redis-trib.rb'
-./redis-trib.rb create --replicas $replicas$ipAddressesAndPorts
+ruby ./redis-trib.rb create --replicas $replicas$ipAddressesAndPorts
