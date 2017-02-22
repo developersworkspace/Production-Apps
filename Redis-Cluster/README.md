@@ -4,7 +4,7 @@
 
 To install a Redis Cluster across multiple servers you'll need to execute the following command on each of the servers.
 
-`bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/install.sh)`
+`curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/cluster.sh | bash -s "7001|7002|7003|7004|7005|7006|7007|7008"`
 
 Then on one of the servers you need to execute the clustering commands.
 
