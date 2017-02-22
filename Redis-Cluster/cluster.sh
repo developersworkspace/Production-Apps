@@ -9,7 +9,7 @@ for ipAddress in "${ipAddresses[@]}"
 do
     for port in "${ports[@]}"
     do
-        ipAddressesAndPorts += "$ipAddress:$port "
+        ipAddressesAndPorts+="$ipAddress:$port "
     done
 done
 
