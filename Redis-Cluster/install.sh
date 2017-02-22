@@ -31,9 +31,9 @@ sudo mkdir /etc/redis
 # Install redis instances
 IFS='|' read -a ports <<< "$1"
 
-for i in "${ports[@]}"
+for port in "${ports[@]}"
 do
-    curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/Redis/install.sh | bash -s $i
+    curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/Redis/install.sh | bash -s $port
 done
 
 # Install 'ruby'

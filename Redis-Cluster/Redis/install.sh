@@ -4,7 +4,7 @@ sed "s/_REDIS-PORT_/$1/g" /etc/redis/redis-server.conf > /etc/redis/redis-server
 
 # Download Redis service configuration file
 sudo curl -o /etc/systemd/system/redis-server.service https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/Redis/redis-server.service
-sed "s/_REDIS-PORT_/$1/g" /etc/systemd/system/redis-server.service > /etc/systemd/system/redis-server-$1.serviceconf
+sed "s/_REDIS-PORT_/$1/g" /etc/systemd/system/redis-server.service > /etc/systemd/system/redis-server-$1.service
 
 # Enable Redis service to run on startup
 sudo systemctl enable redis-server-$1
