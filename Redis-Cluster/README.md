@@ -4,7 +4,7 @@
 
 Run this command on your Linux server
 
-`bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/install.sh)`
+`curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/install.sh | bash -s "7001|7002"`
 
 This will create 8 instances of Redis that runs on port 7001 to 7008
 
