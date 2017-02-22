@@ -9,8 +9,8 @@ for ipAddress in "${ipAddresses[@]}"
 do
     for port in "${ports[@]}"
     do
-        ipAddressesAndPorts+="$ipAddress:$port "
+        ipAddressesAndPorts+=" $ipAddress:$port"
     done
 done
 
-echo "./redis-trib.rb create --replicas $replicas$ipAddressesAndPorts"
+./redis-trib.rb create --replicas $replicas$ipAddressesAndPorts

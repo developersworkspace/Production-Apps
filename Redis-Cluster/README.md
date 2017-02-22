@@ -20,7 +20,7 @@ In this example we'll be using '172.24.40.21' as IP Address.
 
 Please replace this with the IP Address of your Linux server
 
-curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/cluster.sh | bash -s "1" "172.24.40.21|172.24.40.22" "7001|7002|7003|7004|7005|7006|7007|7008"
+`curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/cluster.sh | bash -s "1" "172.24.40.21|172.24.40.22" "7001|7002|7003|7004|7005|7006|7007|7008"`
 
 The MIT License (MIT)
 =====================
