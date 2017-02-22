@@ -3,7 +3,7 @@ function join { local IFS="$1"; shift; echo "$*"; }
 
 cd /tmp/redis-stable/src
 
-replicas = "$1"
+declare -a replicas = "$1"
 IFS='|' read -a ipAddresses <<< "$2"
 IFS='|' read -a ports <<< "$3"
 
