@@ -20,8 +20,7 @@ In this example we'll be using '172.24.40.21' as IP Address.
 
 Please replace this with the IP Address of your Linux server
 
-`./redis-trib.rb create --replicas 1 172.24.40.21:7001 172.24.40.21:7002 172.24.40.21:7003 172.24.40.21:7004 172.24.40.21:7005 172.24.40.21:7006 172.24.40.21:7007 172.24.40.21:7008`
-
+curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/d8ac80dd9d6844be173bf12e00c4de5d7faf6ee3/Redis-Cluster/cluster.sh | bash -s "1" "172.24.40.21|172.24.40.22" "7001|7002|7003|7004|7005|7006|7007|7008"
 
 The MIT License (MIT)
 =====================
