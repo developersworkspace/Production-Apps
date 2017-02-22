@@ -28,15 +28,13 @@ sudo make install
 # Create '/etc/redis' directory
 sudo mkdir /etc/redis
 
-# Install 8 instances
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7001/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7002/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7003/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7004/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7005/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7006/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7007/install.sh)
-bash <(curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/7008/install.sh)
+# Install redis instances
+IFS='|' read -a ports <<< "$1"
+
+for i in "${ports[@]}"
+do
+    curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/Redis/install.sh | bash -s $i
+done
 
 # Install 'ruby'
 sudo apt-get install -y ruby
