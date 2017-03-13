@@ -4,6 +4,8 @@ sudo chmod 600 /swapfile
 
 sudo mkswap /swapfile
 
+sudo swapon /swapfile
+
 # Make Swap File Permanent
 
 # sudo cp /etc/fstab /etc/fstab.bak
@@ -12,6 +14,6 @@ sudo mkswap /swapfile
 
 # Turn off swap
 
-swapoff /swapfile
+# swapoff /swapfile
 
-sudo rm -f /swapfile
+# sudo rm -f /swapfile
