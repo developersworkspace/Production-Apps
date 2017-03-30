@@ -4,8 +4,8 @@ sudo apt-get update
 # Install 'build-essential' and 'tcl'
 sudo apt-get install -y build-essential tcl
 
-# Create and Change to '/tmp' directory
-cd /tmp
+# Create and Change to '/temp_install' directory
+cd /temp_install
 
 # Download Redis sources
 curl -O http://download.redis.io/redis-stable.tar.gz

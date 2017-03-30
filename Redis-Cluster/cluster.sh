@@ -1,5 +1,5 @@
 # Change to redis source directory
-cd /tmp/redis-stable/src
+cd /temp_install/redis-stable/src
 
 # Rename 'redis-trib.rb' to 'redis-trib.temp'
 mv redis-trib.rb redis-trib.temp
