@@ -5,6 +5,7 @@ sudo apt-get update
 sudo apt-get install -y build-essential tcl
 
 # Create and Change to '/temp_install' directory
+mkdir /temp_install
 cd /temp_install
 
 # Download Redis sources
