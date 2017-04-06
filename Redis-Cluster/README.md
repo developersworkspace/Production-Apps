@@ -10,9 +10,9 @@ Then on one of the servers you need to execute the clustering commands.
 
 `curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/cluster.sh | bash -s "<numberOfReplicas>" "<ipAddressOfServer1>|<ipAddressOfServer2>" "<port1>|<port2>"`
 
-For example, if you have two servers with the IP Addresses of '172.24.40.21' and '172.24.40.22', your command will be.
+For example, if you have two servers with the IP Addresses of '192.168.1.101' and '192.168.1.102', your command will be.
 
-`curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/cluster.sh | bash -s "1" "172.24.40.21|172.24.40.22" "7001|7002|7003|7004|7005|7006|7007|7008"`
+`curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Redis-Cluster/cluster.sh | bash -s "1" "192.168.1.101|192.168.1.102" "7001|7002|7003|7004|7005|7006|7007|7008"`
 
 The MIT License (MIT)
 =====================
