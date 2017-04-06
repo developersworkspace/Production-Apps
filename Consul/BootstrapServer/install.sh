@@ -1,9 +1,10 @@
 sudo apt-get update
 sudo apt-get install -y unzip
-cd /usr/local/bin
-wget https://dl.bintray.com/mitchellh/consul/0.3.0_linux_amd64.zip
-unzip *.zip
-rm *.zip
+
+wget https://releases.hashicorp.com/consul/0.7.5/consul_0.7.5_linux_amd64.zip
+unzip consul_0.7.5_linux_amd64.zip
+mv consul /usr/local/bin/consul
+
 mkdir -p /etc/consul.d/bootstrap
 mkdir /var/consul
 chown root:root /var/consul
