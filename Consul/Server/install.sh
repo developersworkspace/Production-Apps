@@ -14,6 +14,6 @@ mkdir -p /etc/consul.d/bootstrap
 mkdir /var/consul
 chown root:root /var/consul
 
-# Downloads bootstrap server config
-sudo curl -o /etc/consul.d/bootstrap/config.json https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Consul/BootstrapServer/config.json
+# Downloads server config
+sudo curl -o /etc/consul.d/bootstrap/config.json https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Consul/Server/config.json
 
