@@ -4,6 +4,8 @@
 
 `curl -s https://raw.githubusercontent.com/developersworkspace/Production-Apps/master/Consul/BootstrapServer/install.sh | bash -s`
 
+`consul agent -config-dir /etc/consul.d/bootstrap`
+
 The MIT License (MIT)
 =====================
 
